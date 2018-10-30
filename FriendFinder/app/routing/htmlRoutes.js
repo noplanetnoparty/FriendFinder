@@ -3,9 +3,9 @@
 //    * A GET Route to `/survey` which should display the survey page.
 
 var express = require('express')
+var router = express.Router()
 var path = require('path')
 
-var router = express.Router()
 
 //    * A GET Route to `/survey` which should display the survey page.
 

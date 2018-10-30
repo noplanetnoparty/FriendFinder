@@ -10,9 +10,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <!-- Chosen -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script> -->
 
 </head>
 
@@ -30,115 +27,116 @@
         <input type="text" id="photo" class="form-control" required="">
 
         <hr>
-
-        <h3>Question 1</h3>
-        <h4>Statement one will go here</h4>
-        <select class="chosen-select" id="q1">
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-
-        <h3>Question 2</h3>
-        <h4>Statement two will go here</h4>
-        <select class="chosen-select" id="q1">
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-
-        <h3>Question 1</h3>
-        <h4>Statement one will go here</h4>
-        <select class="chosen-select" id="q2">
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-
-        <h3>Question 3</h3>
-        <h4>Statement three will go here</h4>
-        <select class="chosen-select" id="q3">
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-
-        <h3>Question 4</h3>
-        <h4>Statement four will go here</h4>
-        <select class="chosen-select" id="q4">
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-
-        <h3>Question 5</h3>
-        <h4>Statement five will go here</h4>
-        <select class="chosen-select" id="q5">
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-
-        <h3>Question 6</h3>
-        <h4>Statement six will go here</h4>
-        <select class="chosen-select" id="q6">
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-
-        <h3>Question 7</h3>
-        <h4>Statement seven will go here</h4>
-        <select class="chosen-select" id="q7">
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-
-        <h3>Question 8</h3>
-        <h4>Statement eight will go here</h4>
-        <select class="chosen-select" id="q8">
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-        <h3>Question 9</h3>
-        <h4>Statement nine will go here</h4>
-        <select class="chosen-select" id="q9">
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-
-        <h3>Question 10</h3>
-        <h4>Statement ten will go here</h4>
-        <select class="chosen-select" id="q10">
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
+        <div class="form-group">
+            <h5>Question 1</h5>
+            <label>I prefer going out to dinner more than staying in to cook a meal.</label>
+            <select class="form-control" id="q1">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <h5>Question 2</h5>
+            <label>I enjoy going camping.</label>
+            <select class="form-control" id="q2">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <h5>Question 3</h5>
+            <label>When I have free time, I typically find something active to do.</label>
+            <select class="form-control" id="q3">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <h5>Question 4</h5>
+            <label>Statement</label>
+            <select class="form-control" id="q4">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <h5>Question 5</h5>
+            <label>Statement</label>
+            <select class="form-control" id="q5">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <h5>Question 6</h5>
+            <label>Statement</label>
+            <select class="form-control" id="q6">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <h5>Question 7</h5>
+            <label>Statement</label>
+            <select class="form-control" id="q7">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <h5>Question 8</h5>
+            <label>Statement</label>
+            <select class="form-control" id="q8">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <h5>Question 9</h5>
+            <label>Statement</label>
+            <select class="form-control" id="q9">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <h5>Question 10</h5>
+            <label>Statement</label>
+            <select class="form-control" id="q10">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
 
         <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">Submit</button>
 
@@ -151,67 +149,49 @@
 
 </body>
 <script>
-    var config = {
-      ".chosen-select": {},
-      ".chosen-select-deselect": {
-        allow_single_deselect: true
-      },
-      ".chosen-select-no-single": {
-        disable_search_threshold: 10
-      },
-      ".chosen-select-no-results": {
-        no_results_text: "Oops, nothing found!"
-      },
-      ".chosen-select-width": {
-        width: "95%"
-      }
-    };
 
-    // for (var selector in config) {
-    //   $(selector).chosen(config[selector]);
+    $("#submit").on("click", function (event) {
+        event.preventDefault();
+        // Create an object for the users data
+        var userInput = {
+            name: $("#name").val(),
+            photo: $("#photo").val(),
+            scores: [
+                parseInt($("#q1").val()),
+                parseInt($("#q2").val()),
+                parseInt($("#q3").val()),
+                parseInt($("#q4").val()),
+                parseInt($("#q5").val()),
+                parseInt($("#q6").val()),
+                parseInt($("#q7").val()),
+                parseInt($("#q8").val()),
+                parseInt($("#q9").val()),
+                parseInt($("#q10").val())
+            ]
+        };
+
+        console.log(userInput)
+
+
+        $.post("/api/friends", userInput).then(function(data) {
+          console.log(data);
+          
+        });
+    })
+
+        // var newUserScores = userInput.scores
+        // newUserScores = newUserScores.map(Number);
+
+        // console.log(newUserScores)
+
     // }
-
-    $("#submit").on("click", function(event) {
-      event.preventDefault();
-    // Create an object for the users data
-    var userInput = {
-        name: $("#name").val(),
-        photo: $("#photo").val(),
-        scores: [
-            $("#q1").val(),
-            $("#q2").val(),
-            $("#q3").val(),
-            $("#q4").val(),
-            $("#q5").val(),
-            $("#q6").val(),
-            $("#q7").val(),
-            $("#q8").val(),
-            $("#q9").val(),
-            $("#q10").val()
-        ]
-    };
-
-    console.log(userInput)
-
-    var newFriendScores = userInput.scores
-    newFriendScores = newFriendScores.map(Number);
-
-    console.log(newFriendScores)
-
-    // add newFriendScores to get totalScore and push into an friendArray
-})
-// $.post("/app/data/api/friends", userInput, function(data) {
-
-// }
-// $.post("/app/data/api/friends", userData, function(data) {
-//           // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-//           $("#match-name").text(data.name);
-//           $("#match-img").attr("src", data.photo);
-//           // Show the modal with the best match
-//           $("#results-modal").modal("toggle");
-//         });
-
-
+    // $.post("/app/data/api/friends", userData, function(data) {
+    //           // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+    //           $("#match-name").text(data.name);
+    //           $("#match-img").attr("src", data.photo);
+    //           // Show the modal with the best match
+    //           $("#results-modal").modal("toggle");
+    //         });
 </script>
 
 </html>
