@@ -5,7 +5,7 @@ Friend Finder Dating App
 
 **NPM:**
  * Express
-    *Express - Router
+ * Express - Router
  * Path
  * Node Modules
  * JSON
