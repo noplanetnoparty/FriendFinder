@@ -17,39 +17,62 @@ router.get('/api/friends', function (req, res) {
 router.post("/api/friends", function (req, res) {
   // req.body hosts is equal to the JSON post sent from the user
   // This works because of our body parsing middleware
-  res.json(true);
   var newUser = req.body;
   // console.log(newUser);
 
   var newUserScores = newUser.scores
   newUserScores = newUserScores.map(Number);
 
-  console.log(newUserScores);
+  // console.log(newUserScores);
 
-  function totalScore() {
-    var userTotal = 0
+  var userScoreArray = [];
 
-    newUserScores.forEach(function (x) {
-      userTotal += x
-    })
-    console.log(userTotal)
-  }
-// console.log(userTotal)
 
-  totalScore();
-  // console.log(userTotal)
+  var userTotal = 0
+
+  newUserScores.forEach(function (x) {
+    userTotal += x
+  })
+  console.log(userTotal)
 
   for (var i = 0; i < friends.length; i++) {
-    
+    var userScores = friends[i].scores
+    userScores = userScores.map(Number);
+    // console.log(userScores)
+
+    var otherTotal = 0
+
+    userScores.forEach(function (x) {
+      otherTotal += x
+    })
+    // console.log(otherTotal)
+
+    userScoreArray.push(otherTotal)
+  }
+  console.log(userScoreArray)
+
+  function closest(array, num) {
+    var i = 0;
+    var minDiff = 100;
+    var ans;
+    for (i in array) {
+      var m = Math.abs(num - array[i]);
+      if (m < minDiff) {
+        minDiff = m;
+        ans = array[i];
+      }
+    }
+    return ans;
   }
 
-  // newUserTotal = 0
-  // for (var i = 0; i < newUser.scores.length; i++) {
-  //   newUserTotal += parseInt(newUser.scores[i]);
-  // }
+  var match = closest(userScoreArray, userTotal)
+  console.log(match)
+  var indexNum = userScoreArray.indexOf(match)
+
   friends.push(newUser);
+  res.json(friends[indexNum])
 
 })
 
-
+// return friends.name
 module.exports = router
