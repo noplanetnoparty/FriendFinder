@@ -17,17 +17,38 @@ router.get('/api/friends', function (req, res) {
 router.post("/api/friends", function (req, res) {
   // req.body hosts is equal to the JSON post sent from the user
   // This works because of our body parsing middleware
-  var newFriend = req.body;
-  console.log(newFriend);
+  res.json(true);
+  var newUser = req.body;
+  // console.log(newUser);
 
-  var userTotalArray = [];
+  var newUserScores = newUser.scores
+  newUserScores = newUserScores.map(Number);
 
-  // for (var i =0; i < )
+  console.log(newUserScores);
 
-  newFriendTotal = 0
-  for (var i = 0; i < newFriend.scores.length; i++) {
-    newFriendTotal += parseInt(newFriend.scores[i]);
+  function totalScore() {
+    var userTotal = 0
+
+    newUserScores.forEach(function (x) {
+      userTotal += x
+    })
+    console.log(userTotal)
   }
+// console.log(userTotal)
+
+  totalScore();
+  // console.log(userTotal)
+
+  for (var i = 0; i < friends.length; i++) {
+    
+  }
+
+  // newUserTotal = 0
+  // for (var i = 0; i < newUser.scores.length; i++) {
+  //   newUserTotal += parseInt(newUser.scores[i]);
+  // }
+  friends.push(newUser);
+
 })
 
 

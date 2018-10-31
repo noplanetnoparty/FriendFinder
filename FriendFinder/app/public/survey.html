@@ -27,6 +27,7 @@
         <input type="text" id="photo" class="form-control" required="">
 
         <hr>
+
         <div class="form-group">
             <h5>Question 1</h5>
             <label>I prefer going out to dinner more than staying in to cook a meal.</label>
@@ -62,7 +63,7 @@
         </div>
         <div class="form-group">
             <h5>Question 4</h5>
-            <label>Statement</label>
+            <label>I would consider myself a dog person.</label>
             <select class="form-control" id="q4">
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -73,7 +74,7 @@
         </div>
         <div class="form-group">
             <h5>Question 5</h5>
-            <label>Statement</label>
+            <label>My friends would describe me as confident.</label>
             <select class="form-control" id="q5">
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -156,6 +157,7 @@
         var userInput = {
             name: $("#name").val(),
             photo: $("#photo").val(),
+            // change front end validation to make sure only photo input
             scores: [
                 parseInt($("#q1").val()),
                 parseInt($("#q2").val()),
@@ -173,16 +175,15 @@
         console.log(userInput)
 
 
-        $.post("/api/friends", userInput).then(function(data) {
-          console.log(data);
+        $.post("/api/friends", userInput, function(data) {
+          if(data) {
+              console.log("sucess")
+          } else {
+              console.log("your shit broke sista")
+          }
           
         });
     })
-
-        // var newUserScores = userInput.scores
-        // newUserScores = newUserScores.map(Number);
-
-        // console.log(newUserScores)
 
     // }
     // $.post("/app/data/api/friends", userData, function(data) {

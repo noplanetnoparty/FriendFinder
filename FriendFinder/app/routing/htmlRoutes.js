@@ -15,7 +15,7 @@ router.get('/survey', function (req, res) {
 
 //    * A default, catch-all route that leads to `home.html` which displays the home page. 
 
-router.get('/', function(req, res) {
+router.get('*', function(req, res) {
   res.sendFile(path.join(__dirname, '/../public/home.html'));
 });
 

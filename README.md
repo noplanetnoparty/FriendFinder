@@ -4,9 +4,13 @@ Friend Finder Dating App
 ## Required Packages
 
 **NPM:**
- *Express
- *Path
- *All Node Modules
- *JSON Package
- *
+ * Express
+    *Express - Router
+ * Path
+ * Node Modules
+ * JSON
+ * jQuery
+ * Bootstrap
+
+ 
  
