@@ -11,6 +11,8 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -142,57 +144,61 @@
         <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">Submit</button>
 
     </div>
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container">
-          <p><a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a>
+            <p><a href="/api/friends">API Friends List</a> | <a href="/app/public/home">Start Over</a>
         </div>
-      </footer> -->
- <!-- Modal -->
- <div id="match-modal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
+    </footer>
+    <!-- Modal1 -->
+    <!-- <div id="match-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog"> -->
 
-      <!-- Modal content-->
-      <div class="modal-content">
+    <!-- Modal content-->
+    <!-- <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h2 class="modal-title"><strong>Your Match!</strong></h2>
         </div>
         <div class="modal-body">
           <h2 id="match-name"></h2>
-          <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+          <img id="match-img" src="https://via.placeholder.com/150" alt="">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
-      </div>
+      </div> -->
+<!-- Modal2 -->
+    <!-- <div class="modal fade" id="match-modal" tabindex="-1" role="dialog" aria-labelledby="MatchModal" aria-hidden="true">
 
-    </div>
-  </div>
+        <div class="modal-dialog" role="document">
 
-    <!-- <div id="display">
-        <p id="match-name"></p>
-        <img id="match-img">
-    </div> -->
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title w-100" id="myModalLabel">Your Match</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2 id="match-name"></h2>
+                    <img id="match-img" src="https://via.placeholder.com/150"
+                        alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div> -->
+
+
+        <div id="display">
+            <p id="match-name"></p>
+            <img id="match-img">
+        </div>
 
 </body>
 <script type="text/javascript">
-    // Chosen CSS
-    var config = {
-      ".chosen-select": {},
-      ".chosen-select-deselect": {
-        allow_single_deselect: true
-      },
-      ".chosen-select-no-single": {
-        disable_search_threshold: 10
-      },
-      ".chosen-select-no-results": {
-        no_results_text: "Oops, nothing found!"
-      },
-      ".chosen-select-width": {
-        width: "95%"
-      }
-    };
-
     $("#display").hide();
     $("#submit").on("click", function (event) {
         event.preventDefault();
@@ -214,18 +220,21 @@
                 parseInt($("#q10").val())
             ]
         };
-
         console.log(userInput)
 
-
-        $.post("/api/friends", userInput).then(function (data) {
-            // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-            $("#display").show();
+        // $.post("/api/friends", userInput).then(function (data) {
+        //     // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+        //     $("#display").show();
+        //     $("#match-name").text(data.name);
+        //     $("#match-img").attr("src", data.photo);
+        //     // $("#match-modal").modal("toggle");
+        // });
+        $.post("/api/friends", userInput, function (data) {
+            //           // Grab the result from the AJAX post so that the best match's name and photo are displayed.
             $("#match-name").text(data.name);
             $("#match-img").attr("src", data.photo);
-
+            //           // Show the modal with the best match
             $("#match-modal").modal("toggle");
-
         });
     })
 </script>

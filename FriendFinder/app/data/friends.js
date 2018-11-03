@@ -1,6 +1,6 @@
 var friends = [{
-        name: "TEST",
-        photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        name: "Royal",
+        photo: "https://m.media-amazon.com/images/M/MV5BMjA3ODQ1MDg3N15BMl5BanBnXkFtZTgwNDIzNjY3OTE@._V1_.jpg",
         scores: [
             5,
             1,
@@ -15,7 +15,7 @@ var friends = [{
         ]
     },
     {
-        name: "TEST2",
+        name: "Etheline",
         photo: "https://via.placeholder.com/150",
         scores: [
             1,
@@ -31,7 +31,7 @@ var friends = [{
         ]
     },
     {
-        name: "TEST3",
+        name: "Chas",
         photo: "https://via.placeholder.com/150",
         scores: [
             5,
@@ -47,7 +47,7 @@ var friends = [{
         ]
     },
     {
-        name: "TEST4",
+        name: "Richie",
         photo: "https://via.placeholder.com/150",
         scores: [
             3,
@@ -63,7 +63,7 @@ var friends = [{
         ]
     },
     {
-        name: "TEST5",
+        name: "Margo",
         photo: "https://via.placeholder.com/150",
         scores: [
             1,
@@ -79,7 +79,7 @@ var friends = [{
         ]
     },
     {
-        name: "TEST6",
+        name: "Eli",
         photo: "https://via.placeholder.com/150",
         scores: [
             2,
@@ -95,7 +95,7 @@ var friends = [{
         ]
     },
     {
-        name: "TEST7",
+        name: "Henry",
         photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
         scores: [
             5,
@@ -111,7 +111,7 @@ var friends = [{
         ]
     },
     {
-        name: "TEST8",
+        name: "Raleigh",
         photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
         scores: [
             4,
@@ -127,7 +127,7 @@ var friends = [{
         ]
     },
     {
-        name: "TEST9",
+        name: "Pagoda",
         photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
         scores: [
             2,
@@ -142,7 +142,7 @@ var friends = [{
             5
         ]
     },    {
-        name: "TEST10",
+        name: "Mordecai",
         photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
         scores: [
             1,
