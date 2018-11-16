@@ -16,7 +16,7 @@ var friends = [{
     },
     {
         name: "Etheline",
-        photo: "https://via.placeholder.com/150",
+        photo: "https://fashionbodyidentity.files.wordpress.com/2015/03/290714-1.jpg?w=900&h=600&crop=1",
         scores: [
             1,
             2,
@@ -32,7 +32,7 @@ var friends = [{
     },
     {
         name: "Chas",
-        photo: "https://via.placeholder.com/150",
+        photo: "https://cdn-images-1.medium.com/max/1200/0*XHSmwNtdhwVF6JfA.jpg",
         scores: [
             5,
             4,
@@ -48,7 +48,7 @@ var friends = [{
     },
     {
         name: "Richie",
-        photo: "https://via.placeholder.com/150",
+        photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
         scores: [
             3,
             1,
@@ -63,8 +63,8 @@ var friends = [{
         ]
     },
     {
-        name: "Margo",
-        photo: "https://via.placeholder.com/150",
+        name: "Margot",
+        photo: "https://i.pinimg.com/originals/90/94/10/909410dac459ef310ae6ebab06451e19.jpg",
         scores: [
             1,
             1,
@@ -80,7 +80,7 @@ var friends = [{
     },
     {
         name: "Eli",
-        photo: "https://via.placeholder.com/150",
+        photo: "https://medias.spotern.com/spots/w640/2040-1532336916.jpg",
         scores: [
             2,
             1,
@@ -96,7 +96,7 @@ var friends = [{
     },
     {
         name: "Henry",
-        photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        photo: "https://i.pinimg.com/originals/82/f0/d8/82f0d808d666a203806f20b26023a52d.jpg",
         scores: [
             5,
             5,
@@ -112,7 +112,7 @@ var friends = [{
     },
     {
         name: "Raleigh",
-        photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        photo: "https://m.media-amazon.com/images/M/MV5BNjVkYmRkZDItZjBhOC00NGEwLThkNGEtODgzY2ExY2E3YzQ2XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_CR0,45,480,270_AL_UX477_CR0,0,477,268_AL_.jpg",
         scores: [
             4,
             1,
@@ -128,7 +128,7 @@ var friends = [{
     },
     {
         name: "Pagoda",
-        photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        photo: "https://uproxx.files.wordpress.com/2013/10/pagoda-royal-tenenbaums.jpg?quality=95&w=650",
         scores: [
             2,
             1,
@@ -143,7 +143,7 @@ var friends = [{
         ]
     },    {
         name: "Mordecai",
-        photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        photo: "https://media.giphy.com/media/LHBIdztQpJXry/giphy-facebook_s.jpg",
         scores: [
             1,
             5,

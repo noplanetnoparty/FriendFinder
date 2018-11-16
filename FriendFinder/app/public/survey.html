@@ -18,21 +18,27 @@
 <body>
 
     <div class="container">
-        <h1>Survey</h1>
-
+        <h1 class="text-center m-3">Friend Finder - Match Survey</h1>
+        <hr>
+        <h2 class="text-center text-info">Take the survey below to find your match!</h2>
+        <div class="bg-light border mx-5">
+            <h3 class="text-center text-dark">Please respond to each statement</h3>
+            <h5 class="text-center text-body"><strong class="text-danger">1 (Strong Disagree)</strong> to <strong class="text-success">5
+                    (Strongly Agree)</strong></h5>
+        </div>
+        <br>
         <br>
 
-        <h2>Name (Required)</h2>
-        <input type="text" id="name" class="form-control" required="">
-
-        <h2>Link to photo (Required)</h2>
-        <input type="text" id="photo" class="form-control" required="">
-
+        <h4>Name (Required)</h4>
+        <input type="text" id="name" class="form-control border border-secondary" required="" placeholder="John Doe">
+        <br>
+        <h4>Link to photo (Required)</h4>
+        <input type="text" id="photo" class="form-control border border-secondary" required="" placeholder="my-photo.png">
+        <br>
         <hr>
-
         <div class="form-group">
-            <h5>Question 1</h5>
-            <label>I prefer going out to dinner more than staying in to cook a meal.</label>
+            <h5 class="mx-auto">Question 1</h5>
+            <label>I prefer going out to dinner more than staying in to cook a meal</label>
             <select class="form-control" id="q1">
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -43,7 +49,7 @@
         </div>
         <div class="form-group">
             <h5>Question 2</h5>
-            <label>I enjoy going camping.</label>
+            <label>I enjoy going camping</label>
             <select class="form-control" id="q2">
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -54,7 +60,7 @@
         </div>
         <div class="form-group">
             <h5>Question 3</h5>
-            <label>When I have free time, I typically find something active to do.</label>
+            <label>When I have free time, I typically find something active to do</label>
             <select class="form-control" id="q3">
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -65,7 +71,7 @@
         </div>
         <div class="form-group">
             <h5>Question 4</h5>
-            <label>I would consider myself a dog person.</label>
+            <label>I would consider myself a dog person</label>
             <select class="form-control" id="q4">
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -76,7 +82,7 @@
         </div>
         <div class="form-group">
             <h5>Question 5</h5>
-            <label>My friends would describe me as confident.</label>
+            <label>My friends would describe me as easy-going</label>
             <select class="form-control" id="q5">
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -87,7 +93,7 @@
         </div>
         <div class="form-group">
             <h5>Question 6</h5>
-            <label>Statement</label>
+            <label>I enjoy playing tennis</label>
             <select class="form-control" id="q6">
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -98,7 +104,7 @@
         </div>
         <div class="form-group">
             <h5>Question 7</h5>
-            <label>Statement</label>
+            <label>I have strong relationships with my family members and close friends</label>
             <select class="form-control" id="q7">
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -109,7 +115,7 @@
         </div>
         <div class="form-group">
             <h5>Question 8</h5>
-            <label>Statement</label>
+            <label>I enjoy having time to myself</label>
             <select class="form-control" id="q8">
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -120,7 +126,7 @@
         </div>
         <div class="form-group">
             <h5>Question 9</h5>
-            <label>Statement</label>
+            <label>I enjoyed reading as a child</label>
             <select class="form-control" id="q9">
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -131,7 +137,7 @@
         </div>
         <div class="form-group">
             <h5>Question 10</h5>
-            <label>Statement</label>
+            <label>I confide in a close friend or family member when stressed</label>
             <select class="form-control" id="q10">
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -141,11 +147,11 @@
             </select>
         </div>
 
-        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">Submit</button>
+        <button type="submit" class="btn btn-primary btn-lg btn-block mx-auto mt-5" id="submit" style="width: 70%">Submit</button>
 
     </div>
-    <footer class="footer">
-        <div class="container">
+    <footer class="footer mt-5">
+        <div class="container text-center">
             <p><a href="/api/friends">API Friends List</a> | <a href="/app/public/home">Start Over</a>
         </div>
     </footer>
@@ -167,7 +173,7 @@
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div> -->
-<!-- Modal2 -->
+    <!-- Modal2 -->
     <!-- <div class="modal fade" id="match-modal" tabindex="-1" role="dialog" aria-labelledby="MatchModal" aria-hidden="true">
 
         <div class="modal-dialog" role="document">
@@ -192,10 +198,10 @@
         </div> -->
 
 
-        <div id="display">
-            <p id="match-name"></p>
-            <img id="match-img">
-        </div>
+    <div class="container" id="display">
+        <p id="match-name"></p>
+        <img id="match-img">
+    </div>
 
 </body>
 <script type="text/javascript">
@@ -222,19 +228,12 @@
         };
         console.log(userInput)
 
-        // $.post("/api/friends", userInput).then(function (data) {
-        //     // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-        //     $("#display").show();
-        //     $("#match-name").text(data.name);
-        //     $("#match-img").attr("src", data.photo);
-        //     // $("#match-modal").modal("toggle");
-        // });
-        $.post("/api/friends", userInput, function (data) {
-            //           // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+        $.post("/api/friends", userInput).then(function (data) {
+            // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+            $("#display").show();
             $("#match-name").text(data.name);
             $("#match-img").attr("src", data.photo);
-            //           // Show the modal with the best match
-            $("#match-modal").modal("toggle");
+            // $("#match-modal").modal("toggle");
         });
     })
 </script>
